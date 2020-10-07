@@ -22,8 +22,8 @@ public class binary_charstream {
     public static void main(String[] args) throws FileNotFoundException, IOException {
        FileReader fio=null;
         FileWriter fou=null;
-        fio=new FileReader("C:\\Users\\welcom\\Documents\\NetBeansProjects\\lab10\\src\\main\\java\\com\\mycompany\\lab10\\rose1.jpg");
-        fou=new FileWriter("C:\\Users\\welcom\\Documents\\NetBeansProjects\\lab10\\src\\main\\java\\com\\mycompany\\lab10\\rose3.jpg");
+        fio=new FileReader("E:\\java\\rose1.jpg");
+        fou=new FileWriter("E:\\java\\rose3.jpg");
         int i;
         while((i=fio.read())!=-1)
         {
