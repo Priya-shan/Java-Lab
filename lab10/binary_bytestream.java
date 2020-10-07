@@ -19,11 +19,12 @@ public class binary_bytestream {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws FileNotFoundException, IOException {
-          FileInputStream fio=null;
+    public static void main(String[] args) throws Exception {
+        FileInputStream fio=null;
         FileOutputStream fou=null;
-        fio=new FileInputStream ("imgage.j");
-        fou=new FileOutputStream("lab10_image_output.jpg");
+        
+        fio=new FileInputStream ("E:\\java\\rose1.jpg");
+        fou=new FileOutputStream("roseoutforbytestream.jpg");
         int i;
         while((i=fio.read())!=-1)
         {

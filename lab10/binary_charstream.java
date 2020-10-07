@@ -19,17 +19,23 @@ public class binary_charstream {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws FileNotFoundException, IOException {
-       FileReader fio=null;
+    public static void main(String[] args) throws Exception {
+       try {
+        FileReader fio=null;
         FileWriter fou=null;
         fio=new FileReader("E:\\java\\rose1.jpg");
-        fou=new FileWriter("E:\\java\\rose3.jpg");
+        fou=new FileWriter("roseout1.jpg");
         int i;
         while((i=fio.read())!=-1)
         {
             fou.write(i);
         }
         fou.close();
+       }
+       catch(Exception e){
+           System.out.println(e);
+       }
+       
     }
     }
     

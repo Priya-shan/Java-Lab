@@ -8,32 +8,30 @@ public class file_handling_process {
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
         System.out.println("Enter the filename");
-        String filename = obj.next();
-        File f = new File(filename);
-        System.out.println("information of file");
-        System.out.println("Availability==> " + f.exists());
+        String fname = obj.next();
+        File f = new File(fname);
+        System.out.println("Information of file");
+        System.out.println("Availability : " + f.exists());
 
         if (f.canRead() && f.canWrite()) {
-            System.out.println("the file is both readable and writable");
-        } 
-        else if (f.canRead()) {
-            System.out.println("the file is readable");
+            System.out.println("The file is both readable and writable");
+        } else if (f.canRead()) {
+            System.out.println("The file is readable");
 
         } else if (f.canWrite()) {
-            System.out.println("the file is writable");
+            System.out.println("The file is writable");
         } else {
-            System.out.println("undefined property");
+            System.out.println("File cannot be read or write");
         }
-        System.out.println("Type of the file");
-        int index = filename.lastIndexOf(".");
+        System.out.print("Type of the file : ");
+        int index = fname.lastIndexOf(".");
         if (index > 0) {
-            String type = filename.substring(index + 1);
-            System.out.println(type);
+            String str = fname.substring(index + 1);
+            System.out.println(str);
         }
 
-        System.out.println("Length of the file in bytes:" + f.length() + " bytes");
+        System.out.println("Length of the file in bytes :" + f.length() + " bytes");
 
-    
     }
-    
+
 }
