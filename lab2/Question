@@ -1,0 +1,10 @@
+2.Write a Java program to read 5 subject marks of a student and calculate the total and grade.
+The grade system is as follows.
+
+Letter Grade      Grade Points          Marks Range
+O (Outstanding)      10                  91 – 100
+A+ (Excellent)       9                   81 – 90
+A (Very Good)        8                   71 – 80
+B+ (Good)            7                   61 – 70
+B (Average)          6                   50 – 60
+RA                   0                    < 50
